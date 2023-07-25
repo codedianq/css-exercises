@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -25,3 +28,57 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* This section is to remove decorations */
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* This section is for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.left-links {
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
+}
+
+.right-links {
+  display: flex;
+  gap: 10px;
+  padding-right: 15px;
+}
+
+/* this section is for footer */
+.footer {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* This is for the content to center */
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
